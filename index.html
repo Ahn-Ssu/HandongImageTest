@@ -213,6 +213,7 @@
 					break;
 			}
 			$('.result-message').html(resultMessege);
+			$("-.result-major").html(majorName+"같아요");
 			for (let i = 0; i < 4; i++) {
 				switch (prediction[i].className) {
 					case "Manage Econmic":
@@ -252,7 +253,6 @@
 						majorName = "국제어문학부"
 						break;
 				}
-				$("-.result-major").html(majorName+"같아요")
 				const classPrediction =
 					//		prediction[i].className + " : " + String.format("%2f",prediction[i].probability.toFixed(2) * 100) +"%";
 					// prediction[i].className + " : " +String.format("%2.0f", (prediction[i].probability.toFixed(2)* 100)) + "%";
