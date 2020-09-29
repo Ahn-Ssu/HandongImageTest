@@ -20,7 +20,7 @@
 
 <body>
 	<nav class="navbar navbar-expand-lg navbar-light nav-distance">
-		<a class="navbar-brand" href="#">나의 전공은</a>
+		<a class="navbar-brand" href="#">전공 테스트</a>
 		<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
 			aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
 			<span class="navbar-toggler-icon"></span>
@@ -61,7 +61,6 @@
 	<section class="section">
 		<h2 class="title">인공지능 전공 이미지 테스트</h2>
 		<h4 class="subtitle">나는 어떤 전공이 잘 어울려 보일까?</h4>
-		<h6 class="subtitle">ver. Handong</h6>
 	</section>
 	<section class="handong">
 		<div class="container mt-5 handong-cover d-flex flex-row-reverse ">
@@ -212,58 +211,18 @@
 					break;
 					$('.result-message').html(resultMessege);
 					for (let i = 0; i < maxPredictions; i++) {
-						switch (prediction[i].className) {
-							case "Manage Econmic":
-								majorName = "경영경제학부"
-								break;
-							case "ICT":
-								majorName = "ICT창업학부"
-								break;
-							case "CSEE":
-								majorName = "전산전자공학부"
-								break;
-							case "Psychology":
-								majorName = "상담심리사회복지학부"
-								break;
-							case "Environment":
-								majorName = "공간환경시스템공학부"
-								break;
-							case "GLS":
-								majorName = "글로벌리더십학부"
-								break;
-							case "Mechanic":
-								majorName = "기계제어공학부"
-								break;
-							case "Law":
-								majorName = "법학부"
-								break;
-							case "Life":
-								majorName = "생명과학부"
-								break;
-							case "Design":
-								majorName = "콘텐츠융합디자인학부"
-								break;
-							case "Communication":
-								majorName = "커뮤니케이션학부"
-								break;
-							case "International":
-								majorName = "국제어문학부"
-								break;
+						const classPrediction =
+							//		prediction[i].className + " : " + String.format("%2f",prediction[i].probability.toFixed(2) * 100) +"%";
+							// prediction[i].className + " : " +String.format("%2.0f", (prediction[i].probability.toFixed(2)* 100)) + "%";
+							majorName + " : " + Math.round(prediction[i].probability.toFixed(2) * 10000) / 100 + "%";
+						if (prediction[i].probability.toFixed(2) == 0) {
+							labelContainer.childNodes[i].innerHTML = " ";
+							continue;
 						}
-					
-								const classPrediction =
-									//		prediction[i].className + " : " + String.format("%2f",prediction[i].probability.toFixed(2) * 100) +"%";
-									// prediction[i].className + " : " +String.format("%2.0f", (prediction[i].probability.toFixed(2)* 100)) + "%";
-									// majorName + " : " + Math.round(prediction[i].probability.toFixed(2) * 10000) / 100 + "%";
-									prediction[i].className + " : " + Math.round(prediction[i].probability.toFixed(2) * 10000) / 100 + "%";
-								if (prediction[i].probability.toFixed(2) == 0) {
-									labelContainer.childNodes[i].innerHTML = " ";
-									continue;
-								}
-								labelContainer.childNodes[i].innerHTML = classPrediction;
-						}
+						labelContainer.childNodes[i].innerHTML = classPrediction;
 					}
-				}
+			}
+		}
 	</script>
 
 </body>
@@ -273,4 +232,43 @@ The above copyright notice and this permission notice shall be included in all c
 OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF
 OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE. -->
 
+
 </html>
+
+switch (prediction[i].className) {
+	case "Manage Econmic":
+		majorName = "경영경제학부"
+		break;
+	case "ICT":
+		majorName = "ICT창업학부"
+		break;
+	case "CSEE":
+		majorName = "전산전자공학부"
+		break;
+	case "Psychology":
+		majorName = "상담심리사회복지학부"
+		break;
+	case "Environment":
+		majorName = "공간환경시스템공학부"
+		break;
+	case "GLS":
+		majorName = "글로벌리더십학부"
+		break;
+	case "Mechanic":
+		majorName = "기계제어공학부"
+		break;
+	case "Law":
+		majorName = "법학부"
+		break;
+	case "Life":
+		majorName = "생명과학부"
+		break;
+	case "Design":
+		majorName = "콘텐츠융합디자인학부"
+		break;
+	case "Communication":
+		majorName = "커뮤니케이션학부"
+		break;
+	case "International":
+		majorName = "국제어문학부"
+		break;
