@@ -170,34 +170,43 @@
 			const prediction = await model.predict(image, false);
 			prediction.sort((a, b) => parseFloat(b.probability) - parseFloat(a.probability));
 			var resultMessege;
-
+			var majorName;
 			switch (prediction[0].className) {
 				case "Manage Econmic":
-					resultMessege = "저의 통장 관리 경영을 맡겨도 될까요? 경경같아요~"
+					resultMessege = "저의 식비 관리 경영을 맡겨도 될까요? \n경경같아요~"
+					majorName ="경영경제학부"
 					break;
 				case "ICT":
-					resultMessege = "ICT 잘할거 같아요~"
+					resultMessege = "기업가정신..이 보인다.... 혹시 창업 생각중이신가요?\n ICT같아요!"
+					majorName ="ICT창업학부"
 					break;
 				case "CSEE":
-					resultMessege = "혹시 좀 논리적이신가요 전전같아요~"
+					resultMessege = "혹시 뉴턴홀에서 못나고오 계신가요..? 같이 산책이라도 가요...\n전전같아요~"
+					majorName ="전산전자공학부"
 					break;
 				case "Psychology":
-					resultMessege = "상담바로 가능??? 상사같아요~"
+					resultMessege = "학우님이랑 이야기하면 너무 좋을거 같아요\n상사같아요!"
+					majorName ="상담심리사회복지학부"
 					break;
 				case "Environment":
-					resultMessege = "제 집 설계 부탁드려도 되나요?? 공시같아요~"
+					resultMessege = "건물설계도하고 미래설계도 하는 멋진 쏴람들,,\n공시같아요~"
+					majorName ="공간환경시스템공학부"
 					break;
 				case "GLS":
-					resultMessege = "같이 놀러 나갈래요? GLS 같아요~"
+					resultMessege = "우리 같이 바다보러 갈래요? 오늘이 남은 인생 중에 제일 젊으니까✧\nGLS 같아요~"
+					majorName ="글로벌리더십학부"
 					break;
 				case "Mechanic":
-					resultMessege = "낭만 기계같아요~, 혹시 17주차 해보셨나요?"
+					resultMessege = "17주차에도 낭만 있으신 분들 맞나요 혹시..?\n기계같아요"
+					majorName ="기계제어공학부"
 					break;
 				case "Law":
-					resultMessege = "안녕하세요. 저 나쁜사람 아닙니다. 법학부같아요."
+					resultMessege = "안녕하세요. 저 나쁜사람 아닙니다. 잘못했어요. 아 아니 아무잘못 안했어요\n법학부같아요."
+					majorName ="법학부"
 					break;
 				case "Life":
-					resultMessege = "세포 밥 준 경험 있나요?? 생명같아요"
+					resultMessege = "혹쉬 세포 밥 준 경험 있나요??\n생명같아요"
+					majorName ="생명과학부"
 					break;
 				case "Design":
 					resultMessege = "한동의 예술가들, 콘융디 같아요"
