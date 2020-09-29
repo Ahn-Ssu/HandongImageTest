@@ -1,7 +1,7 @@
 body {
   font-family: sans-serif;
   background-color: #ffffff;
-  font-size: 10%;
+  font-size: 13px;
 }
 
 .file-upload {
@@ -64,6 +64,10 @@ body {
 	border-radius: 10px;
 	border: dashed 2px #275793;
 	background-color: #ffffff;
+}
+
+.result-meaage{
+  font-size: 12px;
 }
 
 .image-dropping,
