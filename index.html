@@ -251,7 +251,8 @@
 								const classPrediction =
 									//		prediction[i].className + " : " + String.format("%2f",prediction[i].probability.toFixed(2) * 100) +"%";
 									// prediction[i].className + " : " +String.format("%2.0f", (prediction[i].probability.toFixed(2)* 100)) + "%";
-									majorName + " : " + Math.round(prediction[i].probability.toFixed(2) * 10000) / 100 + "%";
+									// majorName + " : " + Math.round(prediction[i].probability.toFixed(2) * 10000) / 100 + "%";
+									prediction[i].className + " : " + Math.round(prediction[i].probability.toFixed(2) * 10000) / 100 + "%";
 								if (prediction[i].probability.toFixed(2) == 0) {
 									labelContainer.childNodes[i].innerHTML = " ";
 									continue;
