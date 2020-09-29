@@ -166,6 +166,7 @@
 		}
 		// run the webcam image through the image model
 		async function predict() {
+			$('.result-message').html("분석중...");
 			// predict can take in an image, video or canvas html element
 			var image = document.getElementById("face-image")
 			const prediction = await model.predict(image, false);
