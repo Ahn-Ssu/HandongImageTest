@@ -181,7 +181,7 @@
 					majorName ="ICT창업학부"
 					break;
 				case "CSEE":
-					resultMessege = "혹시 뉴턴홀에서 못나고오 계신가요..? 같이 산책이라도 가요...\n전전같아요~"
+					resultMessege = "혹시 뉴턴홀에서 못나오고 계신가요..? 같이 산책이라도 가요...\n전전같아요~"
 					majorName ="전산전자공학부"
 					break;
 				case "Psychology":
@@ -209,13 +209,16 @@
 					majorName ="생명과학부"
 					break;
 				case "Design":
-					resultMessege = "한동의 예술가들, 콘융디 같아요"
+					resultMessege = "반짝이는 아이디어와 그를 만들어내는 능력이 있나요?\n콘융디 같아요"
+					majorName ="콘텐츠융합디자인학부"
 					break;
 				case "Communication":
-					resultMessege = "한동의 예술가들, 언정 같아요"
+					resultMessege = "죽을지언정, 하나될 언정을 혹시 아시나요?\n언정같아요"
+					majorName ="커뮤니케이션학부"
 					break;
 				case "International":
 					resultMessege = "Halo! 국제같아요!"
+					majorName ="국제어문학부"
 					break;
 			}
 			$('.result-message').html(resultMessege);
@@ -223,7 +226,7 @@
 				const classPrediction =
 					//		prediction[i].className + " : " + String.format("%2f",prediction[i].probability.toFixed(2) * 100) +"%";
 					// prediction[i].className + " : " +String.format("%2.0f", (prediction[i].probability.toFixed(2)* 100)) + "%";
-					prediction[i].className + " : " + Math.round(prediction[i].probability.toFixed(2) * 10000) / 100 + "%";
+					najorName + " : " + Math.round(prediction[i].probability.toFixed(2) * 10000) / 100 + "%";
 				if (prediction[i].probability.toFixed(2) == 0) {
 					labelContainer.childNodes[i].innerHTML = " ";
 					continue;
