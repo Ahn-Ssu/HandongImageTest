@@ -5,8 +5,8 @@ body {
 }
 
 .file-upload {
-  background-color: #68b3ec;
-  border: solid 1.5px #68b3ec;
+  background-color: #e4e4e4;
+  border: solid 1.5px #e4e4e4;
   border-radius: 10px;
   margin: 0 auto;
   padding: 20px;
@@ -169,23 +169,6 @@ font-size: 2rem;
 	}
 }
 
-.handong-link{
-	font-family: NanumSquareR;
-	line-height: 1.71;
-	font-size : 5 rem;
-	text-align: center;
-	text-decoration: underline;
-	color: #a5aeff;
-}
-
-.handong-link:hover{
-	font-family: NanumSquareR;
-	line-height: 1.71;
-	font-size : 5 rem;
-	text-align: center;
-	text-decoration: underline;
-	color: #a5aeff;
-}
 
 .handong-icon{
   width: 20%;
