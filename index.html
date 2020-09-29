@@ -79,6 +79,7 @@
 		<div class="file-upload-content">
 			<img class="file-upload-image" id="face-image" src="#" alt="your image" />
 			<p class="result-message"></p>
+			<p class="result-major"></p>
 			<div id="label-container"></div>
 
 
@@ -175,41 +176,40 @@
 			var majorName;
 			switch (prediction[0].className) {
 				case "Manage Econmic":
-					resultMessege = "저의 식비 관리 경영을 맡겨도 될까요? \n경경같아요~"
+					resultMessege = "저의 식비 관리 경영을 맡겨도 될까요?"
 					break;
 				case "ICT":
-					resultMessege = "기업가정신..이 보인다.... 혹시 창업 생각중이신가요?\n ICT같아요!"
+					resultMessege = "기업가정신..이 보인다.... 혹시 창업 생각중이신가요?"
 					break;
 				case "CSEE":
-					resultMessege = "혹시 뉴턴홀에서 못나오고 계신가요..? 같이 산책이라도 가요...\n전전같아요~"
+					resultMessege = "혹시 뉴턴홀에서 못나오고 계신가요..? 같이 산책이라도 가요..."
 					break;
 				case "Psychology":
-					resultMessege = "학우님이랑 이야기하면 너무 좋을거 같아요\n상사같아요!"
+					resultMessege = "학우님이랑 이야기하면 너무 좋을거 같아요~" 
 					break;
 				case "Environment":
-					resultMessege = "건물설계도하고 미래설계도 하는 멋진 쏴람들,,\n공시같아요~"
+					resultMessege = "건물설계도하고 미래설계도 하는 멋진 쏴람들,,"
 					break;
 				case "GLS":
-					resultMessege = "우리 같이 바다보러 갈래요? 오늘이 남은 인생 중에 제일 젊으니까✧\nGLS 같아요~"
+					resultMessege = "우리 같이 바다보러 갈래요? 오늘이 남은 인생 중에 제일 젊으니까✧"
 					break;
 				case "Mechanic":
-					resultMessege = "17주차에도 낭만 있으신 분들 맞나요 혹시..?\n기계같아요"
+					resultMessege = "17주차에도 낭만 있으신 분들 맞나요 혹시..?"
 					break;
 				case "Law":
-					resultMessege = "안녕하세요. 저 나쁜사람 아닙니다. 잘못했어요. 아 아니 아무잘못 안했어요\n법학부같아요."
+					resultMessege = "안녕하세요. 저 나쁜사람 아닙니다. 잘못했어요. 아 아니 아무잘못 안했어요"
 					break;
 				case "Life":
-					resultMessege = "혹쉬 세포 밥 준 경험 있나요??\n생명같아요"
+					resultMessege = "혹쉬 세포 밥 준 경험 있나요??"
 					break;
 				case "Design":
-					resultMessege = "반짝이는 아이디어와 그를 만들어내는 능력이 있나요?\n콘융디 같아요"
+					resultMessege = "반짝이는 아이디어와 그를 만들어내는 능력이 있나요?"
 					break;
 				case "Communication":
-					resultMessege = "죽을지언정, 하나될 언정을 혹시 아시나요?\n언정같아요"
-
+					resultMessege = "죽을지언정, 하나될 언정을 혹시 아시나요?"
 					break;
 				case "International":
-					resultMessege = "한국을 넘어 외국과 더 크게 세상에 대해 비전이 있으신가요?\n국제같아요!"
+					resultMessege = "한국을 넘어 외국과 더 크게 세상에 대해 비전이 있으신가요?"
 					break;
 			}
 			$('.result-message').html(resultMessege);
@@ -252,6 +252,7 @@
 						majorName = "국제어문학부"
 						break;
 				}
+				$("-.result-major").html(majorName+"같아요")
 				const classPrediction =
 					//		prediction[i].className + " : " + String.format("%2f",prediction[i].probability.toFixed(2) * 100) +"%";
 					// prediction[i].className + " : " +String.format("%2.0f", (prediction[i].probability.toFixed(2)* 100)) + "%";
