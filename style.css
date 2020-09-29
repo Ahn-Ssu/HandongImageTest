@@ -1,7 +1,7 @@
 body {
   font-family: sans-serif;
   background-color: #ffffff;
-  font-size: 13px;
+  font-size: 10%;
 }
 
 .file-upload {
@@ -66,10 +66,6 @@ body {
 	background-color: #ffffff;
 }
 
-.result-message{
-  font-size: medium;
-}
-
 .image-dropping,
 .image-upload-wrap:hover {
   background-color: #35465d;
@@ -98,8 +94,8 @@ body {
 
 .file-upload-image {
   /* max-height: 40$; */
-  max-width: 80%;
-  min-width: 300px;
+  max-width: 90%;
+  min-width: 100px;
   margin: auto;
   padding: 20px;
 }
