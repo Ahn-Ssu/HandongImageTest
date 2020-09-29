@@ -1,7 +1,7 @@
 body {
   font-family: sans-serif;
   background-color: #ffffff;
-  font-size: 10%;
+  
 }
 
 .file-upload {
@@ -10,8 +10,8 @@ body {
   border-radius: 10px;
   margin: 0 auto;
   padding: 20px;
-	width: 65%;
-	font-size: 1.5rem; 
+	width: 85%;
+	font-size: large; 
 }
 
 .file-upload-btn {
@@ -188,5 +188,6 @@ font-size: 2rem;
 }
 
 .handong-icon{
-	width: 20%;
+  width: 20%;
+  min-width: 100px;
 }

@@ -20,7 +20,7 @@
 
 <body>
 	<nav class="navbar navbar-expand-lg navbar-light nav-distance">
-		<a class="navbar-brand" href="#">전공 테스트</a>
+		<a class="navbar-brand" href="#">나의 전공은</a>
 		<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
 			aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
 			<span class="navbar-toggler-icon"></span>
@@ -61,6 +61,7 @@
 	<section class="section">
 		<h2 class="title">인공지능 전공 이미지 테스트</h2>
 		<h4 class="subtitle">나는 어떤 전공이 잘 어울려 보일까?</h4>
+		<h6>ver. Handong</h6>
 	</section>
 	<section class="handong">
 		<div class="container mt-5 handong-cover d-flex flex-row-reverse ">
@@ -91,7 +92,7 @@
 			</div>
 		</div>
 	</div>
-	
+
 	<!-- Optional JavaScript -->
 	<!-- jQuery first, then Popper.js, then Bootstrap JS -->
 	<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
@@ -173,67 +174,91 @@
 			var majorName;
 			switch (prediction[0].className) {
 				case "Manage Econmic":
-					resultMessege = "저의 식비 관리 경영을 맡겨도 될까요? \n경경같아요~"
-					majorName ="경영경제학부"
+					resultMessege = "저의 식비 관리 경영을 맡겨도 될까요?"
 					break;
 				case "ICT":
-					resultMessege = "기업가정신..이 보인다.... 혹시 창업 생각중이신가요?\n ICT같아요!"
-					majorName ="ICT창업학부"
+					resultMessege = "기업가정신..이 보인다.... 혹시 창업 생각중이신가요?"
 					break;
 				case "CSEE":
-					resultMessege = "혹시 뉴턴홀에서 못나오고 계신가요..? 같이 산책이라도 가요...\n전전같아요~"
-					majorName ="전산전자공학부"
+					resultMessege = "혹시 뉴턴홀에서 못나오고 계신가요..? 같이 산책이라도 가요..."
 					break;
 				case "Psychology":
-					resultMessege = "학우님이랑 이야기하면 너무 좋을거 같아요\n상사같아요!"
-					majorName ="상담심리사회복지학부"
+					resultMessege = "학우님이랑 이야기하면 너무 좋을거 같아요"
 					break;
 				case "Environment":
-					resultMessege = "건물설계도하고 미래설계도 하는 멋진 쏴람들,,\n공시같아요~"
-					majorName ="공간환경시스템공학부"
+					resultMessege = "건물설계도하고 미래설계도 하는 멋진 쏴람들..?"
 					break;
 				case "GLS":
-					resultMessege = "우리 같이 바다보러 갈래요? 오늘이 남은 인생 중에 제일 젊으니까✧\nGLS 같아요~"
-					majorName ="글로벌리더십학부"
+					resultMessege = "우리 같이 바다보러 갈래요? 오늘이 남은 인생 중에 제일 젊으니까✧"
 					break;
 				case "Mechanic":
-					resultMessege = "17주차에도 낭만 있으신 분들 맞나요 혹시..?\n기계같아요"
-					majorName ="기계제어공학부"
+					resultMessege = "17주차에도 낭만 있으신 분들 맞나요 혹시..?"
 					break;
 				case "Law":
-					resultMessege = "안녕하세요. 저 나쁜사람 아닙니다. 잘못했어요. 아 아니 아무잘못 안했어요\n법학부같아요."
-					majorName ="법학부"
+					resultMessege = "안녕하세요. 저 나쁜사람 아닙니다. 잘못했어요. 아 아니 아무잘못 안했어요."
 					break;
 				case "Life":
-					resultMessege = "혹쉬 세포 밥 준 경험 있나요??\n생명같아요"
-					majorName ="생명과학부"
+					resultMessege = "혹쉬 세포 밥 준 경험 있나요??"
 					break;
 				case "Design":
-					resultMessege = "반짝이는 아이디어와 그를 만들어내는 능력이 있나요?\n콘융디 같아요"
-					majorName ="콘텐츠융합디자인학부"
+					resultMessege = "반짝이는 아이디어와 그를 만들어내는 능력이 있나요?"
 					break;
 				case "Communication":
-					resultMessege = "죽을지언정, 하나될 언정을 혹시 아시나요?\n언정같아요"
-					majorName ="커뮤니케이션학부"
+					resultMessege = "죽을지언정, 하나될 언정을 혹시 아시나요?"
 					break;
 				case "International":
-					resultMessege = "한국을 넘어 외국과 더 크게 세상에 대해 비전이 있으신가요?\n국제같아요!"
-					majorName ="국제어문학부"
+					resultMessege = "한국을 넘어 외국과 더 크게 세상에 대해 비전이 있으신가요?"
 					break;
-			}
-			$('.result-message').html(resultMessege);
-			for (let i = 0; i < maxPredictions; i++) {
-				const classPrediction =
-					//		prediction[i].className + " : " + String.format("%2f",prediction[i].probability.toFixed(2) * 100) +"%";
-					// prediction[i].className + " : " +String.format("%2.0f", (prediction[i].probability.toFixed(2)* 100)) + "%";
-					majorName + " : " + Math.round(prediction[i].probability.toFixed(2) * 10000) / 100 + "%";
-				if (prediction[i].probability.toFixed(2) == 0) {
-					labelContainer.childNodes[i].innerHTML = " ";
-					continue;
-				}
-				labelContainer.childNodes[i].innerHTML = classPrediction;
-			}
-		}
+					$('.result-message').html(resultMessege);
+					for (let i = 0; i < maxPredictions; i++) {
+						switch (prediction[i].className) {
+							case "Manage Econmic":
+								majorName = "경영경제학부"
+								break;
+							case "ICT":
+								majorName = "ICT창업학부"
+								break;
+							case "CSEE":
+								majorName = "전산전자공학부"
+								break;
+							case "Psychology":
+								majorName = "상담심리사회복지학부"
+								break;
+							case "Environment":
+								majorName = "공간환경시스템공학부"
+								break;
+							case "GLS":
+								majorName = "글로벌리더십학부"
+								break;
+							case "Mechanic":
+								majorName = "기계제어공학부"
+								break;
+							case "Law":
+								majorName = "법학부"
+								break;
+							case "Life":
+								majorName = "생명과학부"
+								break;
+							case "Design":
+								majorName = "콘텐츠융합디자인학부"
+								break;
+							case "Communication":
+								majorName = "커뮤니케이션학부"
+								break;
+							case "International":
+								majorName = "국제어문학부"
+								break;
+								const classPrediction =
+									//		prediction[i].className + " : " + String.format("%2f",prediction[i].probability.toFixed(2) * 100) +"%";
+									// prediction[i].className + " : " +String.format("%2.0f", (prediction[i].probability.toFixed(2)* 100)) + "%";
+									majorName + " : " + Math.round(prediction[i].probability.toFixed(2) * 10000) / 100 + "%";
+								if (prediction[i].probability.toFixed(2) == 0) {
+									labelContainer.childNodes[i].innerHTML = " ";
+									continue;
+								}
+								labelContainer.childNodes[i].innerHTML = classPrediction;
+						}
+					}
 	</script>
 
 </body>
