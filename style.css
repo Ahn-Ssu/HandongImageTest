@@ -62,13 +62,15 @@ body {
 	object-fit: contain;
 	border-radius: 10px;
 	border: dashed 2px #275793;
-	background-color: #ffffff;
+  background-color: #ffffff;
+  color: #68B3EC;
 }
 
 .image-dropping,
 .image-upload-wrap:hover {
   background-color: #35465d;
   border: 2px dashed #ffffff;
+  color : #ffffff;
 }
 
 .image-title-wrap {
