@@ -234,7 +234,7 @@ font-size: 2rem;
   height: 2rem;
   border-radius: 10px;
   width: 100%;
-  background-color: rgba(27, 175, 234, 0.2);
+  background-color: rgba(95, 75, 197, 0.2);
 }
 .Law-bar {
   position: absolute;
@@ -242,7 +242,7 @@ font-size: 2rem;
   left: 0;
   height: 2rem;
   border-radius: 10px;
-  background-color: rgba(27, 175, 234, 1);
+  background-color: rgba(95, 75, 197, 1);
 }
 .Life-box {
   position: absolute;
@@ -251,7 +251,7 @@ font-size: 2rem;
   height: 2rem;
   border-radius: 10px;
   width: 100%;
-  background-color: rgba(251, 176, 59, 0.2);
+  background-color: rgba(131, 117, 78, 0.2);
 }
 .Life-bar {
   position: absolute;
@@ -259,7 +259,7 @@ font-size: 2rem;
   left: 0;
   height: 2rem;
   border-radius: 10px;
-  background-color: rgba(251, 176, 59, 1);
+  background-color: rgba(131, 117, 78, 1);
 }
 .Design-box {
   position: absolute;
@@ -268,7 +268,7 @@ font-size: 2rem;
   height: 2rem;
   border-radius: 10px;
   width: 100%;
-  background-color: rgba(195, 140, 102, 0.2);
+  background-color: rgba(225, 111, 97, 0.2);
 }
 .Design-bar {
   position: absolute;
@@ -276,7 +276,7 @@ font-size: 2rem;
   left: 0;
   height: 2rem;
   border-radius: 10px;
-  background-color: rgba(195, 140, 102, 1);
+  background-color: rgba(225, 111, 97, 1);
 }
 .Communication-box {
   position: absolute;
@@ -285,7 +285,7 @@ font-size: 2rem;
   height: 2rem;
   border-radius: 10px;
   width: 100%;
-  background-color: rgba(49, 132, 155, 0.2);
+  background-color: rgba(251, 176, 59, 0.2);
 }
 .Communication-bar {
   position: absolute;
@@ -293,7 +293,7 @@ font-size: 2rem;
   left: 0;
   height: 2rem;
   border-radius: 10px;
-  background-color: rgba(49, 132, 155, 1);
+  background-color: rgba(251, 176, 59, 1);
 }
 .International-box {
   position: absolute;
@@ -319,7 +319,7 @@ font-size: 2rem;
   height: 2rem;
   border-radius: 10px;
   width: 100%;
-  background-color: rgba(117, 204, 84, 0.2);
+  background-color: rgba(0, 185, 146, 0.2);
 }
 .GLS-bar {
   position: absolute;
@@ -327,7 +327,7 @@ font-size: 2rem;
   left: 0;
   height: 2rem;
   border-radius: 10px;
-  background-color: rgba(117, 204, 84, 1);
+  background-color: rgba(0, 185, 146, 1);
 }
 .Mechanic-box {
   position: absolute;
@@ -336,7 +336,7 @@ font-size: 2rem;
   height: 2rem;
   border-radius: 10px;
   width: 100%;
-  background-color: rgba(117, 204, 84, 0.2);
+  background-color: rgba(222, 205, 190, 0.2);
 }
 .Mechanic-bar {
   position: absolute;
@@ -344,7 +344,7 @@ font-size: 2rem;
   left: 0;
   height: 2rem;
   border-radius: 10px;
-  background-color: rgba(117, 204, 84, 1);
+  background-color: rgba(222, 205, 190, 1);
 }
 .ManageEconmic-box {
   position: absolute;
@@ -353,7 +353,7 @@ font-size: 2rem;
   height: 2rem;
   border-radius: 10px;
   width: 100%;
-  background-color: rgba(27, 175, 234, 0.2);
+  background-color: rgba(242, 133, 0, 0.2);
 }
 .ManageEconmic-bar {
   position: absolute;
@@ -361,7 +361,7 @@ font-size: 2rem;
   left: 0;
   height: 2rem;
   border-radius: 10px;
-  background-color: rgba(27, 175, 234, 1);
+  background-color: rgba(242, 133, 0, 1);
 }
 .ICT-box {
   position: absolute;
@@ -370,7 +370,7 @@ font-size: 2rem;
   height: 2rem;
   border-radius: 10px;
   width: 100%;
-  background-color: rgba(251, 176, 59, 0.2);
+  background-color: rgba(227, 199, 90, 0.2);
 }
 .ICT-bar {
   position: absolute;
@@ -378,7 +378,7 @@ font-size: 2rem;
   left: 0;
   height: 2rem;
   border-radius: 10px;
-  background-color: rgba(251, 176, 59, 1);
+  background-color: rgba(227, 199, 90, 1);
 }
 .CSEE-box {
   position: absolute;
@@ -387,15 +387,15 @@ font-size: 2rem;
   height: 2rem;
   border-radius: 10px;
   width: 100%;
-  background-color: rgba(195, 140, 102, 0.2);
+  background-color: rgba(29, 78, 137, 0.2);
 }
 .CSEE-bar {
   position: absolute;
   top: 0;
-  left: 0;
+  left: 0; 
   height: 2rem;
   border-radius: 10px;
-  background-color: rgba(195, 140, 102, 1);
+  background-color: rgba(29, 78, 137, 1);
 }
 .Psychology-box {
   position: absolute;
