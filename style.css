@@ -1,19 +1,44 @@
 body {
-  font-family: GOYANG, sans-serif;
+  font-family: sans-serif;
   background-color: #ffffff;
-  
 }
 
 .file-upload {
-  background-color: #F0F1F3;
-  border: solid 1.5px #F0F1F3;
+  background-color: #f6f7fa;
+  border: solid 1.5px #f6f7fa;
   border-radius: 10px;
   margin: 0 auto;
   padding: 20px;
-	width: 85%;
-	font-size: large; 
+	width: 65%;
+	font-size: 1.5rem; 
 }
 
+.file-upload-btn {
+  width: 100%;
+  margin: 0;
+  color: #fff;
+  background: #1FB264;
+  border: none;
+  padding: 10px;
+  border-radius: 4px;
+  border-bottom: 4px solid #15824B;
+  transition: all .2s ease;
+  outline: none;
+  text-transform: uppercase;
+  font-weight: 700;
+}
+
+.file-upload-btn:hover {
+  background: #1AA059;
+  color: #ffffff;
+  transition: all .2s ease;
+  cursor: pointer;
+}
+
+.file-upload-btn:active {
+  border: 0;
+  transition: all .2s ease;
+}
 
 .file-upload-content {
   display: none;
@@ -30,28 +55,20 @@ body {
   opacity: 0;
   cursor: pointer;
 }
-.drag-text h3 :hover{
-  color:white;
-}
-
-.upload-text:hover {
-  color: white;
-}
 
 .image-upload-wrap {
   margin-top: 20px;
 	position: relative;
 	object-fit: contain;
 	border-radius: 10px;
-	border: dashed 2px #0173BC;
+	border: dashed 2px #275793;
 	background-color: #ffffff;
 }
 
 .image-dropping,
 .image-upload-wrap:hover {
-  background-color: #6096de;
+  background-color: #35465d;
   border: 2px dashed #ffffff;
-  color:white;
 }
 
 .image-title-wrap {
@@ -59,25 +76,24 @@ body {
   color: #222;
 }
 
+.drag-text {
+  text-align: center;
+  color : #30507F;
+}
 
 .drag-text h3 {
 	width: 50%;
 	margin: 0 auto;
   font-weight: 100;
   text-transform: uppercase;
-  position: relative;
 	font-size:2rem;
-  color: #6096de;
+  color: #6b76ff;
   padding: 60px 0;
 }
 
-
-
-
 .file-upload-image {
-  /* max-height: 40$; */
-  max-width: 90%;
-  min-width: 100px;
+  max-height: 200px;
+  max-width: 200px;
   margin: auto;
   padding: 20px;
 }
@@ -86,11 +102,11 @@ body {
   width: 200px;
   margin: 0;
   color: #fff;
-  background: #68B3EC;
+  background: #cd4535;
   border: none;
   padding: 10px;
   border-radius: 4px;
-  border-bottom: 4px solid #68B3EC;
+  border-bottom: 4px solid #b02818;
   transition: all .2s ease;
   outline: none;
   text-transform: uppercase;
@@ -98,7 +114,7 @@ body {
 }
 
 .remove-image:hover {
-  background: #68B3EC;
+  background: #c13b2a;
   color: #ffffff;
   transition: all .2s ease;
   cursor: pointer;
@@ -114,7 +130,7 @@ body {
 }
 
 .navbar-light .navbar-brand{
-	font-family: GOYANG;
+	font-family: NanumSquareR;
 	line-height: 1.68;
 	text-align: left;
 	color: #35465d;
@@ -129,26 +145,17 @@ body {
 }
 
 .title {
-	font-family: GOYANG;
+	font-family: NanumSquareR;
 	line-height: 1.67;
 	text-align: center;
 	color: #35465d;
 }
 
 .subtitle{
-	font-family: GOYANG;
+	font-family: NanumSquareR;
 	line-height: 1.53;
 	text-align: center;
 	color: #35465d;
-}
-
-@font-face {
-  font-family: 'GOYANG';
-  src: local('GOYANG'),
-     url('/fonts/GOYANG.woff2') format('woff2'), 
-     url('/fonts/GOYANG.woff') format('woff'),
-     url('/fonts/GOYANG.ttf') format('truetype'),
-     url('/fonts/GOYANG.eot') format('embedded-opentype');
 }
 
 @media screen and(max-width):600px {
@@ -160,8 +167,24 @@ font-size: 2rem;
 	}
 }
 
+.handong-link{
+	font-family: NanumSquareR;
+	line-height: 1.71;
+	font-size : 5 rem;
+	text-align: center;
+	text-decoration: underline;
+	color: #a5aeff;
+}
+
+.handong-link:hover{
+	font-family: NanumSquareR;
+	line-height: 1.71;
+	font-size : 5 rem;
+	text-align: center;
+	text-decoration: underline;
+	color: #a5aeff;
+}
 
 .handong-icon{
-  width: 20%;
-  min-width: 150px;
+	width: 20%;
 }
