@@ -174,7 +174,6 @@ font-size: 2rem;
 }
 
 .handong-link{
-	font-family: NanumSquareR;
 	line-height: 1.71;
 	font-size : 5 rem;
 	text-align: center;
@@ -183,7 +182,6 @@ font-size: 2rem;
 }
 
 .handong-link:hover{
-	font-family: NanumSquareR;
 	line-height: 1.71;
 	font-size : 5 rem;
 	text-align: center;
