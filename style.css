@@ -30,6 +30,13 @@ body {
   opacity: 0;
   cursor: pointer;
 }
+.drag-text h3 :hover{
+  color: #ffffff;
+}
+
+.upload-text:hover {
+  color: #ffffff;
+}
 
 .image-upload-wrap {
   margin-top: 20px;
@@ -64,13 +71,7 @@ body {
 }
 
 
-.drag-text h3 :hover{
-  color: #ffffff;
-}
 
-.upload-text:hover {
-  color: #ffffff;
-}
 
 .file-upload-image {
   /* max-height: 40$; */
