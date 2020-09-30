@@ -242,10 +242,10 @@
 
 				var label = "<div class='major-label d-flex align-items-center'>" + majorName + "</div>"
 				if(prediction[i].className ==  "Manage Econmic"){
-					var bar = "<div class='bar-container position-relative container'><div class='" + "ManageEconmic-box'></div><div class='d-flex justify-content-center align-items-center " + "ManageEconmic-bar' style='width: " + barWidth + "'><span class='d-block percent-text'>" + Math.round(prediction[i].probability.toFixed(2) * 10000)/ 100 + "%</span></div></div>"
+					var bar = "<div class='bar-container position-relative container'><div class='" + "ManageEconmic-box percent-text'></div><div class='d-flex justify-content-center align-items-center " + "ManageEconmic-bar' style='width: " + barWidth + "'><span class='d-block '>" + Math.round(prediction[i].probability.toFixed(2) * 10000)/ 100 + "%</span></div></div>"
 				}
 				else{
-					var bar = "<div class='bar-container position-relative container'><div class='" + prediction[i].className + "-box'></div><div class='d-flex justify-content-center align-items-center " + prediction[i].className + "-bar' style='width: " + barWidth + "'><span class='d-block percent-text'>" + Math.round(prediction[i].probability.toFixed(2) * 10000)/ 100 + "%</span></div></div>"
+					var bar = "<div class='bar-container position-relative container'><div class='" + prediction[i].className + "-box percent-text' ></div><div class='d-flex justify-content-center align-items-center " + prediction[i].className + "-bar' style='width: " + barWidth + "'><span class='d-block '>" + Math.round(prediction[i].probability.toFixed(2) * 10000)/ 100 + "%</span></div></div>"
 				}
 				
 				// if (prediction[i].probability.toFixed(2) == 0) {
