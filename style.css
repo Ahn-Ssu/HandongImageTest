@@ -31,11 +31,11 @@ body {
   cursor: pointer;
 }
 .drag-text h3 :hover{
-  color: #ffffff;
+  color:white;
 }
 
 .upload-text:hover {
-  color: #ffffff;
+  color: #white;
 }
 
 .image-upload-wrap {
@@ -51,7 +51,7 @@ body {
 .image-upload-wrap:hover {
   background-color: #6096de;
   border: 2px dashed #ffffff;
-  color:#ffffff;
+  color:white;
 }
 
 .image-title-wrap {
