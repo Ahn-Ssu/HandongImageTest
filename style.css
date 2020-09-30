@@ -65,6 +65,7 @@ body {
 	margin: 0 auto;
   font-weight: 100;
   text-transform: uppercase;
+  position: relative;
 	font-size:2rem;
   color: #6096de;
   padding: 60px 0;
