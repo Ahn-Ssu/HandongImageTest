@@ -251,7 +251,7 @@ font-size: 2rem;
   height: 2rem;
   border-radius: 10px;
   width: 100%;
-  background-color: rgba(131, 117, 78, 0.2);
+  background-color: rgba(127, 220, 0, 0.2);
 }
 .Life-bar {
   position: absolute;
@@ -259,7 +259,7 @@ font-size: 2rem;
   left: 0;
   height: 2rem;
   border-radius: 10px;
-  background-color: rgba(131, 117, 78, 1);
+  background-color: rgba(127, 220, 0, 1);
 }
 .Design-box {
   position: absolute;
