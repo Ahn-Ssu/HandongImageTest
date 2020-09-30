@@ -1,36 +1,18 @@
 body {
-  font-family: sans-serif;
+  font-family: GOYANG, sans-serif;
   background-color: #ffffff;
   
 }
 
 .file-upload {
-  background-color: #e4e4e4;
-  border: solid 1.5px #e4e4e4;
+  background-color: #F0F1F3;
+  border: solid 1.5px #F0F1F3;
   border-radius: 10px;
   margin: 0 auto;
   padding: 20px;
 	width: 85%;
 	font-size: large; 
 }
-
-.file-upload-btn {
-  width: 100%;
-  margin: 0;
-  color: #fff;
-  background: #1FB264;
-  border: none;
-  padding: 10px;
-  border-radius: 4px;
-  border-bottom: 4px solid #15824B;
-  transition: all .2s ease;
-  outline: none;
-  text-transform: uppercase;
-  font-weight: 700;
-}
-
-
-
 
 
 .file-upload-content {
@@ -54,7 +36,7 @@ body {
 	position: relative;
 	object-fit: contain;
 	border-radius: 10px;
-	border: dashed 2px #2f79d3;
+	border: dashed 2px #0173BC;
 	background-color: #ffffff;
 }
 
@@ -62,6 +44,7 @@ body {
 .image-upload-wrap:hover {
   background-color: #6096de;
   border: 2px dashed #ffffff;
+  color:#ffffff;
 }
 
 .image-title-wrap {
@@ -96,11 +79,11 @@ body {
   width: 200px;
   margin: 0;
   color: #fff;
-  background: #6096de;
+  background: #68B3EC;
   border: none;
   padding: 10px;
   border-radius: 4px;
-  border-bottom: 4px solid #6096de;
+  border-bottom: 4px solid #68B3EC;
   transition: all .2s ease;
   outline: none;
   text-transform: uppercase;
@@ -108,7 +91,7 @@ body {
 }
 
 .remove-image:hover {
-  background: #2f79d3;
+  background: #68B3EC;
   color: #ffffff;
   transition: all .2s ease;
   cursor: pointer;
@@ -124,7 +107,7 @@ body {
 }
 
 .navbar-light .navbar-brand{
-	font-family: NanumSquareR;
+	font-family: GOYANG;
 	line-height: 1.68;
 	text-align: left;
 	color: #35465d;
@@ -139,17 +122,26 @@ body {
 }
 
 .title {
-	font-family: NanumSquareR;
+	font-family: GOYANG;
 	line-height: 1.67;
 	text-align: center;
 	color: #35465d;
 }
 
 .subtitle{
-	font-family: NanumSquareR;
+	font-family: GOYANG;
 	line-height: 1.53;
 	text-align: center;
 	color: #35465d;
+}
+
+@font-face {
+  font-family: 'GOYANG';
+  src: local('GOYANG'),
+     url('/fonts/GOYANG.woff2') format('woff2'), 
+     url('/fonts/GOYANG.woff') format('woff'),
+     url('/fonts/GOYANG.ttf') format('truetype'),
+     url('/fonts/GOYANG.eot') format('embedded-opentype');
 }
 
 @media screen and(max-width):600px {
