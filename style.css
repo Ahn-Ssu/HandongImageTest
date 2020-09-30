@@ -63,8 +63,12 @@ body {
   font-weight: 100;
   text-transform: uppercase;
 	font-size:2rem;
-  color: #ffffff;
+  color: #6096de;
   padding: 60px 0;
+}
+
+.drag-text:hover h3 {
+  color: #ffffff;
 }
 
 .file-upload-image {
