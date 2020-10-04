@@ -243,11 +243,11 @@
 				if (prediction[i].probability.toFixed(2) > 0.2) {
 					barWidth = Math.round(prediction[i].probability.toFixed(2) * 10000) / 100 + "%";
 				} else if (prediction[i].probability.toFixed(2) >= 0.1) {
-					barWidth = "18%"
+					barWidth = "25%"
 				} else if (prediction[i].probability.toFixed(2) >= 0.03) {
-					barWidth = "10%"
+					barWidth = "15%"
 				} else {
-					barWidth = "5%"
+					barWidth = "10%"
 				}
 
 				var label = "<div class='major-label d-flex align-items-center'>" + majorName + "</div>"
