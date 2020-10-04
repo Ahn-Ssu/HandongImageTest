@@ -240,12 +240,14 @@
 					// prediction[i].className + " : " +String.format("%2.0f", (prediction[i].probability.toFixed(2)* 100)) + "%";
 					majorName + " : " + Math.round(prediction[i].probability.toFixed(2) * 10000) / 100 + "%";
 				var barWidth;
-				if (prediction[i].probability.toFixed(2) > 0.1) {
+				if (prediction[i].probability.toFixed(2) > 0.2) {
 					barWidth = Math.round(prediction[i].probability.toFixed(2) * 10000) / 100 + "%";
-				} else if (prediction[i].probability.toFixed(2) >= 0.01) {
-					barWidth = "4%"
+				} else if (prediction[i].probability.toFixed(2) >= 0.1) {
+					barWidth = "18%"
+				} else if (prediction[i].probability.toFixed(2) >= 0.03) {
+					barWidth = "10%"
 				} else {
-					barWidth = "2%"
+					barWidth = "4%"
 				}
 
 				var label = "<div class='major-label d-flex align-items-center'>" + majorName + "</div>"
