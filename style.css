@@ -145,8 +145,13 @@ body {
 	border-color: #ffffff;
 }
 
+.headLabel{
+  width:100%;
+  min-height: 130px;
+}
+
 .section{
-	margin-top: 100px;
+	margin-top: 50px;
 }
 
 .title {
